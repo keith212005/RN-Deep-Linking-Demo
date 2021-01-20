@@ -1,3 +1,5 @@
+#import <React/RCTLinkingManager.h>
+
 #import "AppDelegate.h"
 
 #import <React/RCTBridge.h>
