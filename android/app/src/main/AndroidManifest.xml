@@ -6,18 +6,14 @@
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
-      <intent-filter>
-        <action android:name="android.intent.action.VIEW"/>
-        <category android:name="android.intent.category.DEFAULT"/>
-        <category android:name="android.intent.category.BROWSABLE"/>
 
-        <data android:scheme="https"
-        android:host="myapp"
-        android:pathPrefix="/home" />
-
-        <data android:scheme="myapp"/>
-        <data android:scheme="mychat"/>
+      <intent-filter android:label="filter_react_native">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="peopleapp" android:host="people" />
       </intent-filter>
+
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
   </application>
